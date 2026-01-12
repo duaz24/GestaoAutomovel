@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView android:text="Novo Registo" android:textSize="20sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+
+    <RadioGroup android:id="@+id/radioGroupTipo" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="10dp">
+        <RadioButton android:id="@+id/radioCombustivel" android:text="Combustível" android:checked="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/radioOutro" android:text="Outra Despesa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20dp"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editValor"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:hint="Custo Total (€)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editLitros"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:hint="Litros Abastecidos"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:visibility="visible"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editKmAtuais"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:hint="Quilometragem atual (KM)"
+        android:inputType="number" />
+
+    <Button android:id="@+id/btnSalvarGasto" android:text="Registar no Histórico" android:layout_marginTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="#4CAF50"/>
+</LinearLayout>

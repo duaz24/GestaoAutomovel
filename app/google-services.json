@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "288768579568",
+    "project_id": "gestaoautomovel-8947e",
+    "storage_bucket": "gestaoautomovel-8947e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288768579568:android:4c57c505d976a28bddaf35",
+        "android_client_info": {
+          "package_name": "com.example.gestaoautomovel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzikR_7PWKp9xejwAIGkYMsbpmGaj4YyA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

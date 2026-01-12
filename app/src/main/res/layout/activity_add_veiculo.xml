@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView android:text="Nova Viatura" android:textSize="22sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/editMarca"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:hint="Marca (ex: Toyota)"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/editModelo"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:hint="Modelo (ex: Yaris)"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/editMatricula"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:hint="Matrícula"
+        android:inputType="textCapCharacters" />
+
+    <Button android:id="@+id/btnGuardarVeiculo" android:text="Guardar Viatura" android:layout_marginTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="#2196F3"/>
+</LinearLayout>
