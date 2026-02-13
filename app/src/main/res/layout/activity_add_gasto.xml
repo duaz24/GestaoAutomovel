@@ -1,41 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp">
+    android:background="@color/brand_background">
 
-    <TextView android:text="Novo Registo" android:textSize="20sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
-
-    <RadioGroup android:id="@+id/radioGroupTipo" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="10dp">
-        <RadioButton android:id="@+id/radioCombustivel" android:text="Combustível" android:checked="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-        <RadioButton android:id="@+id/radioOutro" android:text="Outra Despesa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20dp"/>
-    </RadioGroup>
-
-    <EditText
-        android:id="@+id/editValor"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="77dp"
-        android:hint="Custo Total (€)"
-        android:inputType="numberDecimal" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <EditText
-        android:id="@+id/editLitros"
-        android:layout_width="match_parent"
-        android:layout_height="83dp"
-        android:hint="Litros Abastecidos"
-        android:inputType="numberDecimal"
-        android:minHeight="48dp"
-        android:visibility="visible"
-        tools:ignore="TouchTargetSizeCheck" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Novo Registo"
+            android:textColor="@color/brand_text_primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editKmAtuais"
-        android:layout_width="match_parent"
-        android:layout_height="82dp"
-        android:hint="Quilometragem atual (KM)"
-        android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="14dp"
+            android:text="Adicione abastecimentos e outras despesas da viatura."
+            android:textColor="@color/brand_text_secondary"
+            android:textSize="14sp" />
 
-    <Button android:id="@+id/btnSalvarGasto" android:text="Registar no Histórico" android:layout_marginTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="#4CAF50"/>
-</LinearLayout>
+        <RadioGroup
+            android:id="@+id/radioGroupTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioCombustivel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Combustível" />
+
+            <RadioButton
+                android:id="@+id/radioOutro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Outra Despesa" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/brand_secondary"
+            android:hint="Custo Total (€)"
+            android:inputType="numberDecimal"
+            android:minHeight="56dp"
+            android:padding="14dp" />
+
+        <EditText
+            android:id="@+id/editLitros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/brand_secondary"
+            android:hint="Litros Abastecidos"
+            android:inputType="numberDecimal"
+            android:minHeight="56dp"
+            android:padding="14dp"
+            android:visibility="visible"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editKmAtuais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/brand_secondary"
+            android:hint="Quilometragem atual (KM)"
+            android:inputType="number"
+            android:minHeight="56dp"
+            android:padding="14dp" />
+
+        <Button
+            android:id="@+id/btnSalvarGasto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/brand_success"
+            android:text="Registar no Histórico"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>
